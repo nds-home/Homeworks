@@ -12,14 +12,14 @@
  */
 
 // your solution...
-// const zoo = {
-//   lion: "Alex",
-//   zebra: "Marty",
-//   hipo: "Gloria",
-//   giraffe: "Melman",
-// };
-// const size = Object.keys(zoo).length;
-// console.log(size);
+const zoo = {
+  lion: "Alex",
+  zebra: "Marty",
+  hipo: "Gloria",
+  giraffe: "Melman",
+};
+const size = Object.keys(zoo).length;
+console.log(size);
 /**
  * map "family" object to an array of strings
  *
@@ -40,18 +40,18 @@
 
 // your solution...
 
-// const family = {
-//   father: { name: "John", age: 39 },
-//   mother: { name: "Mary", age: 38 },
-//   son: { name: "Philip", age: 12 },
-//   daughter: { name: "Ann", age: 10 },
-// };
+const family = {
+  father: { name: "John", age: 39 },
+  mother: { name: "Mary", age: 38 },
+  son: { name: "Philip", age: 12 },
+  daughter: { name: "Ann", age: 10 },
+};
 
-// const keys = Object.keys(family); // ['father', 'mother', 'son', 'daughter']
-// const mapped = keys.map((key) => {
-//   const member = family[key]; // { name: "John", age: 39 }
-//   return member.name;
-// });
+const keys = Object.keys(family); // ['father', 'mother', 'son', 'daughter']
+const mapped = keys.map((key) => {
+  const member = family[key]; // { name: "John", age: 39 }
+  return member.name;
+});
 
 /**
  * write a program that prints the numbers from 1 to 100
@@ -62,63 +62,21 @@
 
 // your solution...
 
-// for (i = 0; i <= 15; i++) {
-//   if (i % 3 == 0 && i % 5 == 0) {
-//     console.log("FizzBuzz");
-//     continue;
-//   }
+for (i = 0; i <= 15; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log("FizzBuzz");
+    continue;
+  }
 
-//   if (i % 3 == 0) {
-//     console.log("fizz");
-//     continue;
-//   }
+  if (i % 3 == 0) {
+    console.log("fizz");
+    continue;
+  }
 
-//   if (i % 5 == 0) {
-//     console.log("buzz");
-//     continue;
-//   }
+  if (i % 5 == 0) {
+    console.log("buzz");
+    continue;
+  }
 
-//   console.log(i);
-// }
-
-// const log = (msg) => {
-//   console.log(msg);
-// };
-
-// const sum = (a, b) => {
-//   return a + b;
-// };
-
-let arrOne = [
-  { category: 1, cnt: 0 },
-
-  { category: 2, cnt: 0 },
-
-  { category: 3, cnt: 0 },
-
-  { category: 4, cnt: 0 },
-
-  { category: 5, cnt: 0 },
-
-  { category: 6, cnt: 0 },
-
-  { category: 7, cnt: 0 },
-
-  { category: 8, cnt: 0 },
-
-  { category: 9, cnt: 0 },
-
-  { category: 10, cnt: 0 },
-];
-
-let arrTwo = [
-  { category: 1, cnt: 7 },
-
-  { category: 2, cnt: 1 },
-
-  { category: 4, cnt: 2 },
-
-  { category: 6, cnt: 2 },
-
-  { category: 7, cnt: 4 },
-];
+  console.log(i);
+}
